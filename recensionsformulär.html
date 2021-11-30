@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Recension</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<section>
+    <header>
+        <a href="startsida.html"><img src="img/Logga.png" alt="" class="img_logga"></a>
+    </header>
+    <nav>
+        <a href="receptlista.html">Recept</a>
+        <a href="recensioner.html">Recensioner</a>
+    </nav>
+    <main id="recension">
+
+        <form id="formulär" onsubmit="return validateForm()">
+            <p><label>Namn: </label> <br/> <input cols="60" type="text" id="txtName" ></p>
+            <p><label for="recept" class="selectbox"> Vilket recept vill du recensera: </label> <br/>
+            <select id="recept">
+                <option value="Blåbärspaj">Blåbärspaj</option>
+                <option value="Annat">Annat recept</option>
+            </select></p>
+            <p><label>Lämmna en recension: </label> <br/> <textarea rows= "20" cols = "60" name = "txtRecension" required></textarea> </p>
+            <p><input type="submit" value="Skicka in"></p>
+            <p id="output"></p>
+        </form>
+        <script src="javascript/recensionsformulär.js"></script>
+
+    </main>
+    <footer>
+        <p><a href="#">ava.wulkan@iths.se</a></p>
+    </footer>
+</section>
+</body>
+</html>
